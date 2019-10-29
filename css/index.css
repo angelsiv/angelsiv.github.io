@@ -1,0 +1,16 @@
+h1, h2
+{
+    /*font-weight: bold;
+    margin: 10px;*/
+}
+
+h1
+{
+    font-size: 50px;
+}
+
+h2
+{
+    font-size: 30px;
+    margin-left: 10px;
+}

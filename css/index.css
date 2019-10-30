@@ -2,15 +2,51 @@ h1, h2
 {
     /*font-weight: bold;
     margin: 10px;*/
+    padding-left: 50px;
 }
 
 h1
 {
+    padding-top: 30px;
     font-size: 50px;
 }
 
 h2
 {
     font-size: 30px;
-    margin-left: 10px;
+    margin-left: 25px;
 }
+
+body :link, :visited, :active {
+    text-decoration: none;
+    color: black;
+}
+
+.heading
+{
+    background: linear-gradient(#00ff90, #00ffff);
+    font-size: 20px;
+    text-align: center;
+    margin: 30px;
+}
+
+ul#horizontal-list li
+{
+    margin: 10px;
+    display: inline;
+}
+
+.body
+{
+    margin:50px;
+    padding-left: 25px;
+}
+
+img#hiro-socks
+{
+    width: 500px;
+    margin: 100px;
+    border-radius: 50%;
+    transform: rotate(90deg);
+}
+

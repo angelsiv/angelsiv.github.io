@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'alphabetized_cassette_tapesRg';
+    src: url('fonts/alphabetized_cassette_tapes-webfont.woff2') format('woff2'), url('fonts/alphabetized_cassette_tapes-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: alphabetized_cassette_tapesRg;
+    font-size: 50px;
+}
+
+body :link, :visited, :active {
+    text-decoration: none;
+    color: black;
+}
+
+ul#horizontal-list li {
+    margin: 10px;
+    display: inline;
+}
+
+.heading {
+    background: linear-gradient(#00ff90, #00ffff);
+    font-size: 60px;
+    text-align: center;
+    margin: 30px;
+}

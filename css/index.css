@@ -1,19 +1,43 @@
+/*my professional profile img*/
+header img 
+{
+    float: left;
+    max-width: 6%;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-left: 35px;
+}
+
+@font-face 
+{
+    font-family: 'alphabetized_cassette_tapesRg';
+    src: url('fonts/alphabetized_cassette_tapes-webfont.woff2') format('woff2'), url('fonts/alphabetized_cassette_tapes-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    font-family: alphabetized_cassette_tapesRg;
+    font-size: 50px;
+}
+
 h1, h2
 {
-    /*font-weight: bold;
-    margin: 10px;*/
-    padding-left: 50px;
+    /*margin-left: 25px;*/
+    font-style: normal;
+    padding-left: 175px;
 }
 
 h1
 {
     padding-top: 30px;
-    font-size: 50px;
+    font-size: 80px;
 }
 
 h2
 {
-    font-size: 30px;
+    font-size: 60px;
     margin-left: 25px;
 }
 
@@ -25,7 +49,7 @@ body :link, :visited, :active {
 .heading
 {
     background: linear-gradient(#00ff90, #00ffff);
-    font-size: 20px;
+    font-size: 60px;
     text-align: center;
     margin: 30px;
 }

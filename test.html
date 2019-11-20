@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Source: https://www.youtube.com/watch?v=Z3OnwkPOfY4 -->
+    </head>
+
+    <body>
+        <canvas width="500" height="300">
+        </canvas>
+
+        <section> Use the WASD keys! </section>
+
+        <script>
+            /*
+            class Player()
+            {
+                constructor(x_pos, y_pos)
+                {
+                    this.x_pos = x_pos;
+                    this.y_pos = y_pos;
+                }
+            }
+            getPosition()
+            {
+                return this.x_pos + ", " + this.y_pos;
+            }
+            */
+            
+            //game canvas
+            //create reference to the html canvas element
+            const canvas = document.querySelector('canvas');
+            console.log(canvas);
+
+            //change canvas size here
+            canvas.width = 500;
+            canvas.height = 300;
+
+            //2d context will let render 2d items in the canvas
+            const context = canvas.getContext('2d');
+            console.log(context);
+
+            //fillStyle needs to be before
+            //context.fillStyle = 'grey';
+            //context.fillRect(1, 1, canvas.width, canvas.height);
+
+            //player
+            let player_x = 10;
+            let player_y = 10;
+            //initial drawing
+            context.fillStyle = 'grey';
+            context.fillRect(player_x, player_y, 20, 20);
+
+            //randomly spawned base
+            let base_x = Math.floor(Math.random() * 250);
+            let base_y = Math.floor(Math.random() * 250);
+            //initial drawing
+            context.strokeRect(base_x, base_y, 50, 50);
+
+            function updateCanvas()
+            {
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                context.fillStyle = 'grey';
+                context.fillRect(player_x, player_y, 20, 20);
+                context.strokeRect(base_x, base_y, 50, 50);
+                //requestAnimationFrame(updateCanvas);
+            }
+
+            function handleInput(event)
+            {
+                const keyPressed = event.key;
+                console.log(event.key);
+
+                if (keyPressed == 'w') {
+                    console.log("up");
+                    player_y-=10;
+                }
+                if (keyPressed == 's') {
+                    console.log("down");
+                    player_y+=10;
+                }
+                if (keyPressed == 'a') {
+                    console.log("left");
+                    player_x-=10;
+                }
+                if (keyPressed == 'd') {
+                    console.log("right");
+                    player_x+=10;
+                }
+                requestAnimationFrame(updateCanvas);
+            }
+            
+            document.addEventListener('keypress', handleInput)
+
+        </script>
+
+        <!-- STYLE -->
+        <style>
+            canvas
+            {
+                border: 30px double;
+                border-image: url(img/hiro.JPG) 50 repeat;
+            }
+        </style>
+    </body>
+</html>

@@ -1,18 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29306.81
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3A338E2D-5E8C-401E-9C31-DD29F61E3CFC}"
 	ProjectSection(SolutionItems) = preProject
 		aboutme.html = aboutme.html
-		css\aboutme_stylesheet.css = css\aboutme_stylesheet.css
+		css\body_stylesheet.css = css\body_stylesheet.css
 		contact.html = contact.html
-		css\contact_stylesheet.css = css\contact_stylesheet.css
+		css\img_stylesheet.css = css\img_stylesheet.css
 		index.html = index.html
-		css\index_stylesheet.css = css\index_stylesheet.css
 		portfolio.html = portfolio.html
-		css\portfolio_stylesheet.css = css\portfolio_stylesheet.css
 	EndProjectSection
 EndProject
 Global

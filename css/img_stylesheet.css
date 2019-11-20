@@ -1,0 +1,17 @@
+/*my professional profile img*/
+header img 
+{
+    float: left;
+    max-width: 6%;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-left: 35px;
+}
+
+img#hiro-socks 
+{
+    width: 500px;
+    margin: 100px;
+    border-radius: 50%;
+    transform: rotate(90deg);
+}

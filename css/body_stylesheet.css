@@ -1,13 +1,3 @@
-/*my professional profile img*/
-header img 
-{
-    float: left;
-    max-width: 6%;
-    border-radius: 50%;
-    margin-top: 50px;
-    margin-left: 35px;
-}
-
 @font-face 
 {
     font-family: 'alphabetized_cassette_tapesRg';
@@ -20,6 +10,12 @@ body
 {
     font-family: alphabetized_cassette_tapesRg;
     font-size: 50px;
+}
+
+body :link, :visited, :active 
+{
+    text-decoration: none;
+    color: black;
 }
 
 h1, h2
@@ -41,9 +37,10 @@ h2
     margin-left: 25px;
 }
 
-body :link, :visited, :active {
-    text-decoration: none;
-    color: black;
+.paragraph
+{
+    margin:50px;
+    padding-left: 25px;
 }
 
 .heading
@@ -59,18 +56,3 @@ ul#horizontal-list li
     margin: 10px;
     display: inline;
 }
-
-.body
-{
-    margin:50px;
-    padding-left: 25px;
-}
-
-img#hiro-socks
-{
-    width: 500px;
-    margin: 100px;
-    border-radius: 50%;
-    transform: rotate(90deg);
-}
-

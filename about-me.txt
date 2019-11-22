@@ -1,9 +1,11 @@
 Hi, my name is Angeline and I am a third year student in Computer Science Technology, 
-specializing in video games programming, at LaSalle College.
+specializing in Video Games Programming, at LaSalle College.
 
 I was born and raised in Montreal, Canada.
 
 My hobbies include reading, travelling and anything gaming.
+
+//maybe make skills into a visual thingie, like a pie or bar chart?
 
 I'm experienced in C++, C# and Java, along with Unity and Unreal Engines on Windows operating systems.
 I have knowledge of SQL with Oracle, and Linux operating systems.
@@ -14,3 +16,18 @@ Non-programming related skills:
 -eMarketing with Google AdWords
 -Retailing Operations
 -Customer Service
+-Dog-petting
+
+-- PORTFOLIO --
+
+//talk about being a program representant and what you do
+-student-teacher experience
+-teaching environment
+-ideas and projects
+
+//talk about experience at INT and recent Tech Week project
+
+//make sure that you explain each projects and have a demo included in the page
+
+//talk about conuhacks project
+

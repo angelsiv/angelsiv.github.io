@@ -21,8 +21,8 @@ Non-programming related skills:
 -- PORTFOLIO --
 
 //talk about being a program representant and what you do
--student-teacher experience
--teaching environment
+-student experience
+-learning environment
 -ideas and projects
 
 //talk about experience at INT and recent Tech Week project

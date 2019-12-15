@@ -15,3 +15,29 @@ img#hiro-socks
     border-radius: 50%;
     transform: rotate(90deg);
 }
+
+figure#map 
+{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    border: solid white;
+    background-color: lightseagreen;
+    border-radius: 10px;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 600px;
+    margin-right: 600px;
+}
+
+figure#map figcaption
+{
+    padding-top: 10px;
+    color: white;
+}
+
+body 
+{
+    /*background: linear-gradient(#00ff90, #00ffff);*/
+}

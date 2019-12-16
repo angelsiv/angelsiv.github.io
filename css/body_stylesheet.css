@@ -86,6 +86,7 @@ table
 {
     margin:10px;
     border: solid lightseagreen;
+    position: center;
 }
 table td
 {
@@ -113,6 +114,7 @@ table#roles td :hover
 .roles
 {
     float: left;
+    position: center;
 }
 
 /*Industry skills*/
@@ -130,10 +132,8 @@ table#skills h3
 .skills
 {
     float: right;
+    position: center;
 }
-
-/*ABOUT ME*/
-
 
 /*PORTFOLIO*/
 h2#projects-title
@@ -142,3 +142,21 @@ h2#projects-title
     font-size: 30px;
     font-family: fantasque_sans_monoregular;
 }
+
+/*CONTACT*/
+.contact-container
+{
+    margin-left: 600px;
+    margin-right: 600px;
+    background-color: lightseagreen;
+}
+
+.contact-container p
+{
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+

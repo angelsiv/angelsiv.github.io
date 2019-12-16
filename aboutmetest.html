@@ -1,29 +1,28 @@
-ï»¿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
-    <title>angelsiu/about_me</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/body_stylesheet.css" />
     <link rel="stylesheet" href="css/img_stylesheet.css" />
+    <title> angelsiu/about_me </title>
 
     <style>
-        /*BASE CODE FROM JAVASCRIPT SLIDESHOW LECTURE*/
-
         /* Slideshow container */
-        .slideshow-container {
-            max-width: 900px;
-            position: relative;
+        .slideshow-container 
+        {
+            max-width: 1000px;
+            position: center;
             margin: auto;
         }
 
-        .mySlides {
+        .slides {
             display: none;
         }
 
         img {
             vertical-align: middle;
-            border-radius: 10px;
         }
 
         /* Next & previous buttons */
@@ -53,10 +52,10 @@
             border-radius: 3px 0 0 3px;
         }
 
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover, .next:hover {
-            background-color: rgba(0,0,0,0.8);
-        }
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover, .next:hover {
+                background-color: rgba(0,0,0,0.8);
+            }
 
         /* Number text (1/3 etc) */
         .numbertext {
@@ -94,10 +93,10 @@
             transition: background-color 0.6s ease;
         }
 
-        /* the class active will be added by the JavaScript code to mark the active dot*/
-        .active, .dot:hover {
-            background-color: #717171;
-        }
+            /* the class active will be added by the JavaScript code to mark the active dot*/
+            .active, .dot:hover {
+                background-color: #717171;
+            }
 
         /* Fading animation */
         /* The prefix -webkit- is for Safari browser */
@@ -137,10 +136,9 @@
             }
         }
     </style>
-
 </head>
+    
 <body>
-
     <div class="heading">
         <ul id="horizontal-list">
             <li> <a href="index.html"> <img src="img/home-button.png" alt="home" width="25" /> </a> </li>
@@ -158,16 +156,17 @@
         </p>
 
         <p>
-            My current goal is to achieve a successful career in programming, specifically in the video games industry, and Montreal is actually in the top ten cities in North America with the largest amount of existing video games companies.
+            My current goal is to achieve a successful career in programming, specifically in the video games industry, and Montréal is actually in the top ten cities in North America with the largest amount of existing video games companies.
             I enjoy playing video games and making them.
         </p>
+
         <br />
     </div>
 
     <!-- Map figure -->
     <figure id="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d218134.27839632542!2d-73.87038497104587!3d45.55819684525926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70d%3A0x654e3138211fefef!2sMontreal%2C%20QC!5e1!3m2!1sen!2sca!4v1576430888353!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        <figcaption> I was born and raised in Montreal, Quebec. </figcaption>
+        <figcaption> I was born and raised in Montréal, Québec. </figcaption>
     </figure>
 
     <div class="paragraph">
@@ -179,69 +178,74 @@
         <p>
             I also really love my dog, Hiro. He is a Papillon with a very strong personality, but remains our loveable, too-smart-for-his-own-good family member.
         </p>
-        <br /> <br />
     </div>
-    
+
     <!-- Hiro pictures slideshow -->
-    <!-- BASE CODE FROM JAVASCRIPT SLIDESHOW LECTURE -->
     <div class="slideshow-container">
-
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
+        <div class="slides fade">
+            <div class="number-text"> 1 / 3</div>
             <img src="img/hiro-socks.jpg" style="width:100%">
-            <div class="text">Hiro with socks</div>
+            <div class="text">Hiro with Socks</div>
         </div>
 
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
+        <div class="slides fade">
+            <div class="number-text"> 2 / 3</div>
             <img src="img/hiro-snow.jpg" style="width:100%">
-            <div class="text">Hiro enjoys playing in the snow</div>
+            <div class="text">Caption Two</div>
         </div>
 
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
+        <div class="slides fade">
+            <div class="number-text"> 3 / 3</div>
             <img src="img/hiro-donut.jpg" style="width:100%">
-            <div class="text">Hiro loves fetching his toys</div>
+            <div class="text">Caption Three</div>
+
         </div>
 
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>  <!-- The "<" character -->
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>   <!-- The ">" character -->
-
+        <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+        <a class="next" onclick="nextSlide(1)">&#10095;</a>
     </div>
-    <br>
 
     <div class="dots-container">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
-    <script>
-        var slideIndex = 1;     // slides indexed from 1
-        showSlides(slideIndex);
-        setTimeout(automaticChange, 7000);  // To avoid automatic change, comment this line
 
-        function plusSlides(n) {
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        setTimeout(automaticChange, 7000);
+
+        function nextSlide(n) {
             slideIndex += n;
             showSlides(slideIndex);
         }
 
         function currentSlide(n) {
-            slideIndex = n
+            slideIndex = n;
             showSlides(slideIndex);
         }
 
         function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
+            var i
+            var slides = document.getElementByClassName("slides")
             var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }   // if beyond the last one, go to the first one
-            if (n < 1) { slideIndex = slides.length }   // if before the first one, go to the last one
+
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
+
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
             }
+
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
         }
@@ -249,9 +253,11 @@
         function automaticChange() {
             slideIndex++;
             showSlides(slideIndex);
-            setTimeout(automaticChange, 7000);   // call again automaticChange() after 7s
+            setTimeout(automaticChange, 7000);
         }
+
     </script>
 
 </body>
+
 </html>

@@ -8,13 +8,13 @@ header img
     margin-left: 35px;
 }
 
-img#hiro-socks 
+/*img#hiro-socks 
 {
     width: 500px;
     margin: 100px;
     border-radius: 50%;
     transform: rotate(90deg);
-}
+}*/
 
 figure#map 
 {

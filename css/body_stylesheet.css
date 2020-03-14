@@ -14,25 +14,32 @@
     font-style: normal;
 }
 
-body 
+/*Font and background gradient*/
+html 
 {
     font-family: fantasque_sans_monoregular;
+    background-image: linear-gradient(to right, #85dcac, lightseagreen);
+}
+
+body 
+{
+
 }
 
 /*The horizontal menu bar*/
 body :link, :visited
 {
-    text-decoration: none;
+    text-decoration: none; /*No hyperlink visuals*/
     color: white;
 }
 
 h1, h2
 {
     /*margin-left: 25px;*/
-    font-family: alphabetized_cassette_tapesRg;
-    font-style: normal;
-    color: lightseagreen;
-    padding-left: 175px;
+    /*font-family: alphabetized_cassette_tapesRg;*/
+    /*font-style: normal;*/
+    color: darkslategrey;
+    text-align: center;
 }
 
 h1
@@ -64,15 +71,15 @@ h2
 /*Menu bar*/
 .heading
 {
-    background: linear-gradient(#00ff90, lightseagreen);
+    /*background: linear-gradient(#00ff90, lightseagreen);*/
     font-size: 25px;
-    text-align: center;
+    text-align: left;
     margin-top: 30px;
 }
 ul#horizontal-list li
 {
     margin: 10px;
-    padding-right: 20px;
+    padding: 20px;
     display: inline;
 }
 /*When any items of the horizontal list is clicked on, the font colour changes*/
@@ -81,24 +88,34 @@ ul#horizontal-list li :active
     color: lightseagreen;
 }
 
+.redirectables
+{
+    margin: 25px;
+    text-align: center;
+}
+/*Redirectables bar*/
+ul#redirectables li
+{
+    margin: auto;
+    padding: 20px;
+    display: inline;
+}
 
 table
 {
-    margin:10px;
-    border: solid lightseagreen;
-    position: center;
+    margin: auto;
 }
 table td
 {
     padding: 10px;
     align-content: center;
 }
-table li
+/*table li
 {
     padding: 10px;
     list-style-position: inherit;
     list-style-type: circle;
-}
+}*/
 
 /*INDEX*/
 /*Current roles and responsabilities*/
@@ -115,6 +132,20 @@ table#roles td :hover
 {
     float: left;
     position: center;
+}
+
+.rolecollapsible 
+{
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    outline: none;
+}
+
+.roledescription 
+{
+    display: none;
+    overflow: hidden;
 }
 
 /*Industry skills*/
@@ -134,6 +165,7 @@ table#skills h3
     float: right;
     position: center;
 }
+
 
 /*PORTFOLIO*/
 h2#projects-title
@@ -160,3 +192,21 @@ h2#projects-title
     border-radius: 10px;
 }
 
+/*Desktop screen dimensions*/
+@media only screen and (min-width: 600px)
+{
+    .heading
+    {
+        font-size: 20px;
+    }
+}
+
+/*Mobile dimensions */
+@media only screen and (max-width: 600px)
+{
+    .heading 
+    {
+        font-size: 15px;
+        text-align: center;
+    }
+}

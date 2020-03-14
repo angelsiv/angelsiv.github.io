@@ -7,100 +7,158 @@
         <link rel="stylesheet" href="css/body_stylesheet.css" />
         <link rel="stylesheet" href="css/img_stylesheet.css" />
         <title> angelsiu </title>
+
+        <script>
+            var coll = document.getElementsByClassName("rolecollapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+        </script>
     </head>
 
     <body>
-        <header>
-            <img src="img/me-professional.jpg" alt="hiro in donut form" />
-            <h1> hi, i'm angelsiu </h1>
-            <h2> commonly known as angeline</h2>
-        </header>
+        <header></header>
 
         <div class="heading">
             <ul id="horizontal-list">
-                <li> <a href="index.html"> <img src="img/home-button.png" alt="home" width="25"/> </a> </li>
+                <li> <a href="index.html"> <img src="img/home-button.png" alt="home" width="25" /> </a> </li>
                 <li> <a href="aboutme.html"> about me </a> </li>
                 <li> <a href="portfolio.html"> portfolio </a> </li>
                 <li> <a href="contact.html"> contact </a> </li>
             </ul>
         </div>
 
-        <section class="roles">
-            <table id="roles">
+        <div class="profile">
+            <img src="img/me-professional.jpg" alt="profile-picture"  />
+        </div>
+
+        <div>
+            <h1> hi<span style="color: white">!</span> my name is angeline </h1>
+            <!--<h2> and i'm studying {video games programming} </h2>-->
+            <table style="align-self:center">
                 <tr>
                     <td>
-                        2017 - 2020
+                        <h2> and i'm studying </h2>
                     </td>
-
                     <td>
-                        <ul>
-                            <li>
-                                DEC - Computer Science Technology: Video Games Programming
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        2019 - 2020
-                    </td>
-
-                    <td>
-                        <ul>
-                            <li>
-                                Class Delegate for the program of Video Games Programming
-                            </li>
-                            <li>
-                                Executive Member at Innovators in Technology
-                            </li>
-                        </ul>
+                        <h2>
+                            <span style="color: white">{</span>video games programming<span style="color: white">}</span>
+                        </h2>
                     </td>
                 </tr>
             </table>
+        </div>
+
+        <!-- OTHER PAGES THAT REDIRECTS YOU -->
+        <section class="redirectables">
+            <ul id="redirectables">
+                <li>
+                    <a href="https://github.com/angelsiv" target="_blank">  <img src="img/logos/github.png" alt="github" width="50" /> </a>
+                </li>
+                <li>
+                    <a href="https://angelsiu.itch.io/" target="_blank"> <img src="img/logos/itchio.png" alt="itch.io" width="50" /> </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/angeline-siv/" target="_blank"> <img src="img/logos/linkedin.png" alt="linkedin" width="50" /> </a>
+                </li>
+            </ul>
         </section>
-        
-        <section class="skills">
-            <table id="skills">
-                <tr>
-                    <td>
-                        <h3>
-                            <strong> INDUSTRY SKILLS </strong>
-                        </h3>
-                    </td>
-                </tr>
 
-                <tr>
-                    <td>
-                        <ul>
-                            <li>
-                                C++
-                            </li>
+        <!--
+    <section class="roles">
+        <table id="roles">
+            <tr>
+                <td>
+                    2017 - 2020
+                </td>
 
-                            <li>
-                                C#
-                            </li>
+                <td>
+                    <ul>
+                        <li>
+                            <button type="button" class="rolecollapsible" onclick="document.getElementsByClassName('role-description')">
+                            DEC - Computer Science Technology: Video Games Programming
+                            </button>
+                            <div class="roledescription">
+                                <p>
+                                    LaSalle College - Montreal, QC.
+                                </p>
+                            </div>
 
-                            <li>
-                                Java
-                            </li>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2019 - 2020
+                </td>
 
-                            <li>
-                                SQL
-                            </li>
+                <td>
+                    <ul>
+                        <li>
+                            Class Delegate for the program of Video Games Programming
+                        </li>
+                        <li>
+                            Executive Member at Innovators in Technology
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </section>
 
-                            <li>
-                                HTML5, CSS3, JavaScript
-                            </li>
+    <section class="skills">
+        <table id="skills">
+            <tr>
+                <td>
+                    <h3>
+                        <strong> INDUSTRY SKILLS </strong>
+                    </h3>
+                </td>
+            </tr>
 
-                            <li>
-                                Unity Engine 2019, Unreal Engine 4
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </section>
-      
+            <tr>
+                <td>
+                    <ul>
+                        <li>
+                            C++
+                        </li>
+
+                        <li>
+                            C#
+                        </li>
+
+                        <li>
+                            Java
+                        </li>
+
+                        <li>
+                            SQL
+                        </li>
+
+                        <li>
+                            HTML5, CSS3, JavaScript
+                        </li>
+
+                        <li>
+                            Unity Engine 2019, Unreal Engine 4
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </section>
+     -->
 
     </body>
 </html> 

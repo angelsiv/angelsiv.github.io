@@ -1,11 +1,14 @@
-/*my professional profile img*/
-header img 
+.profile 
 {
-    float: left;
-    max-width: 6%;
+}
+
+.profile img
+{
     border-radius: 50%;
+    max-width: 100px;
+    display: block;
+    margin: auto;
     margin-top: 50px;
-    margin-left: 35px;
 }
 
 /*img#hiro-socks 
@@ -35,4 +38,22 @@ figure#map figcaption
 {
     padding-top: 10px;
     color: white;
+}
+
+@media only screen and (min-width: 600px)
+{
+    .profile img
+    {
+        margin-top: 50px;
+        min-width: 100px;
+    }
+}
+
+@media only screen and (min-width: 768px)
+{
+    .profile img
+    {
+        width: 15%;
+        max-width: 150px;
+    }
 }

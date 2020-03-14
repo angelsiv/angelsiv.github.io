@@ -33,6 +33,26 @@ body :link, :visited
     color: white;
 }
 
+/*Menu bar*/
+.heading
+{
+    /*background: linear-gradient(#00ff90, lightseagreen);*/
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+}
+ul#horizontal-list li
+{
+    margin: 10px;
+    padding: 20px;
+    display: inline;
+}
+/*When any items of the horizontal list is clicked on, the font colour changes*/
+ul#horizontal-list li :active 
+{
+    color: lightseagreen;
+}
+
 h1, h2
 {
     /*margin-left: 25px;*/
@@ -45,13 +65,13 @@ h1, h2
 h1
 {
     padding-top: 30px;
-    font-size: 80px;
+    font-size: 55px;
 }
 
 h2
 {
-    font-size: 60px;
-    margin-left: 25px;
+    margin-top: 25px;
+    font-size: 40px;
 }
 
 .paragraph 
@@ -67,30 +87,9 @@ h2
     text-align: justify;
 }
 
-
-/*Menu bar*/
-.heading
-{
-    /*background: linear-gradient(#00ff90, lightseagreen);*/
-    font-size: 25px;
-    text-align: left;
-    margin-top: 30px;
-}
-ul#horizontal-list li
-{
-    margin: 10px;
-    padding: 20px;
-    display: inline;
-}
-/*When any items of the horizontal list is clicked on, the font colour changes*/
-ul#horizontal-list li :active 
-{
-    color: lightseagreen;
-}
-
 .redirectables
 {
-    margin: 25px;
+    margin: 30px;
     text-align: center;
 }
 /*Redirectables bar*/
@@ -99,6 +98,11 @@ ul#redirectables li
     margin: auto;
     padding: 20px;
     display: inline;
+}
+
+.redirectables img
+{
+    width:75px;
 }
 
 table
@@ -193,20 +197,25 @@ h2#projects-title
 }
 
 /*Desktop screen dimensions*/
-@media only screen and (min-width: 600px)
+@media only screen and (min-width: 768px)
 {
     .heading
     {
-        font-size: 20px;
+        font-size: 25px;
+        text-align: left;
     }
-}
-
-/*Mobile dimensions */
-@media only screen and (max-width: 600px)
-{
-    .heading 
+    h1 
     {
-        font-size: 15px;
-        text-align: center;
+        padding-top: 30px;
+        font-size: 80px;
+    }
+    h2 
+    {
+        font-size: 60px;
+        margin-left: 25px;
+    }
+    .redirectables img
+    {
+        width: 50px;
     }
 }

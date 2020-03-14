@@ -5,7 +5,7 @@
 .profile img
 {
     border-radius: 50%;
-    max-width: 100px;
+    max-width: 200px;
     display: block;
     margin: auto;
     margin-top: 50px;
@@ -40,20 +40,11 @@ figure#map figcaption
     color: white;
 }
 
-@media only screen and (min-width: 600px)
-{
-    .profile img
-    {
-        margin-top: 50px;
-        min-width: 100px;
-    }
-}
-
 @media only screen and (min-width: 768px)
 {
     .profile img
     {
-        width: 15%;
+        /*width: 10%;*/
         max-width: 150px;
     }
 }

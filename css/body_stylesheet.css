@@ -37,16 +37,33 @@ body :link, :visited
 .heading
 {
     /*background: linear-gradient(#00ff90, lightseagreen);*/
-    font-size: 25px;
+    font-size: 45px;
     text-align: center;
-    margin-top: 30px;
+    top: 0;
+    /*margin-top: 30px;*/
 }
 ul#horizontal-list li
 {
     margin: 10px;
-    padding: 20px;
-    display: inline;
+    /*padding: 20px;*/
+    display: block;
 }
+
+/*Home button*/
+ul#horizontal-list img
+{
+    width: 40px;
+}
+
+ul#horizontal-list a
+{
+    display: block;
+    cursor: pointer;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 25px;
+}
+
 /*When any items of the horizontal list is clicked on, the font colour changes*/
 ul#horizontal-list li :active 
 {
@@ -65,13 +82,13 @@ h1, h2
 h1
 {
     padding-top: 30px;
-    font-size: 55px;
+    font-size: 85px;
 }
 
 h2
 {
     margin-top: 25px;
-    font-size: 40px;
+    font-size: 65px;
 }
 
 
@@ -91,21 +108,24 @@ h2
 .redirectables
 {
     margin: 30px;
+    margin-bottom: 100px;
     text-align: center;
 }
 /*Redirectables bar*/
 ul#redirectables li
 {
     margin: auto;
-    padding: 20px;
+    /*padding-top: 50px;*/
+    padding: 30px;
     display: inline;
 }
 
 .redirectables img
 {
-    width:75px;
+    width: 150px;
 }
 
+/*Skill display fade animation*/
 .fade
 {
     animation-name: fade;
@@ -113,7 +133,6 @@ ul#redirectables li
     -webkit-animation-name: fade;
     -webkit-animation-duration: 2s;
 }
-
 @keyframes fade
 {
     from
@@ -125,7 +144,6 @@ ul#redirectables li
         opacity: 1;
     }
 }
-
 @-webkit-keyframes fade
 {
     from
@@ -234,6 +252,29 @@ h2#projects-title
 {
     .heading
     {
+        margin-top: 30px;
+    }
+    ul#horizontal-list li
+    {
+        display: inline;
+        background-color: transparent;
+        border: none;
+        padding: 20px;
+    }
+    ul#horizontal-list img
+    {
+        width: 25px;
+    }
+    ul#horizontal-list a
+    {
+        display: inline;
+        border: none;
+        border-radius: 0px;
+        padding: 0px;
+    }
+
+    .heading
+    {
         font-size: 25px;
         text-align: left;
     }
@@ -246,6 +287,19 @@ h2#projects-title
     {
         font-size: 60px;
         margin-left: 25px;
+    }
+    .redirectables
+    {
+        margin: 30px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    ul#redirectables li 
+    {
+        margin: auto;
+        /*padding-top: 50px;*/
+        padding: 10px;
+        display: inline;
     }
     .redirectables img
     {

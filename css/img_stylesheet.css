@@ -5,10 +5,13 @@
 .profile img
 {
     border-radius: 50%;
-    max-width: 200px;
+    max-width: 550px;
     display: block;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    border: 4px solid teal;
+    box-shadow: 25px 5px teal;
 }
 
 /*img#hiro-socks 
@@ -45,6 +48,10 @@ figure#map figcaption
     .profile img
     {
         /*width: 10%;*/
+        margin-top: 100px;
+        margin-bottom: 25px;
         max-width: 150px;
+        border: 2px solid teal;
+        box-shadow: 8px 3px teal;
     }
 }

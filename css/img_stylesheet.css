@@ -40,7 +40,7 @@ figure#map figcaption
     color: white;
 }
 
-@media only screen and (min-width: 768px)
+@media (min-width: 768px)
 {
     .profile img
     {

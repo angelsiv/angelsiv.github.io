@@ -44,27 +44,39 @@
 
         <div>
             <h1> hi<span style="color: white">!</span> my name is angeline </h1>
-            <!--<h2> and i'm studying {video games programming} </h2>-->
-            <!--<table>
-                <tr>
-                    <td>
-                        <h2> and i'm studying </h2>
-                    </td>
-                    <td>
-                        <h2>
-                            <span style="color: white">{</span>video games programming<span style="color: white">}</span>
-                        </h2>
-                    </td>
-                </tr>
-            </table>-->
             <ul id="skill-list">
                 <li>
                     <h2> and i'm studying </h2>
                 </li>
                 <li>
+                    <!--<div class="skillList fade">
+                        <h2>
+                            <span style="color: white">{</span>video games programming<span style="color: white">}</span>
+                        </h2>
+                    </div>-->
+
                     <h2>
-                        <span style="color: white">{</span>video games programming<span style="color: white">}</span>
+                        <span style="color: white">{</span>
+                        <span class="skillList fade">video games programming</span>
+                        <span class="skillList fade">c++</span>
+                        <span class="skillList fade">c#</span>
+                        <span class="skillList fade">unity engine 2019</span>
+                        <span class="skillList fade">unreal engine 4</span>
+                        <span style="color: white">}</span>
                     </h2>
+
+                    <!--<div class="skillList fade">
+                        <h2>
+                            <span style="color: white">{</span>c++<span style="color: white">}</span>
+                        </h2>
+                    </div>-->
+
+                    <!--<div class="skillList fade">
+                        <h2>
+                            <span style="color: white">{</span>unreal engine<span style="color: white">}</span>
+                        </h2>
+                    </div>-->
+
                 </li>
             </ul>
         </div>
@@ -84,91 +96,41 @@
             </ul>
         </section>
 
-        <!--
-    <section class="roles">
-        <table id="roles">
-            <tr>
-                <td>
-                    2017 - 2020
-                </td>
+        <!-- script to change the skill displayed -->
+        <script>
+            var textIndex = 1;
+            showText(textIndex);
+            setTimeout(automaticChange, 3000);
 
-                <td>
-                    <ul>
-                        <li>
-                            <button type="button" class="rolecollapsible" onclick="document.getElementsByClassName('role-description')">
-                            DEC - Computer Science Technology: Video Games Programming
-                            </button>
-                            <div class="roledescription">
-                                <p>
-                                    LaSalle College - Montreal, QC.
-                                </p>
-                            </div>
+            function currentText(n) {
+                textIndex = n
+                showText(textIndex);
+            }
 
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    2019 - 2020
-                </td>
+            function showText(n) {
+                var i;
+                var textList = document.getElementsByClassName("skillList");
 
-                <td>
-                    <ul>
-                        <li>
-                            Class Delegate for the program of Video Games Programming
-                        </li>
-                        <li>
-                            Executive Member at Innovators in Technology
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-    </section>
+                if (n > textList.length) {
+                    textIndex = 1;
+                }
+                if (n < 1) {
+                    textIndex = textList.length;
+                }
 
-    <section class="skills">
-        <table id="skills">
-            <tr>
-                <td>
-                    <h3>
-                        <strong> INDUSTRY SKILLS </strong>
-                    </h3>
-                </td>
-            </tr>
+                for (i = 0; i < textList.length; i++) {
+                    textList[i].style.display = "none";
+                }
 
-            <tr>
-                <td>
-                    <ul>
-                        <li>
-                            C++
-                        </li>
+                textList[textIndex - 1].style.display = "inline";
+            }
 
-                        <li>
-                            C#
-                        </li>
-
-                        <li>
-                            Java
-                        </li>
-
-                        <li>
-                            SQL
-                        </li>
-
-                        <li>
-                            HTML5, CSS3, JavaScript
-                        </li>
-
-                        <li>
-                            Unity Engine 2019, Unreal Engine 4
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-    </section>
-     -->
+            function automaticChange() {
+                textIndex++;
+                showText(textIndex);
+                setTimeout(automaticChange, 3000);
+            }
+        </script>
 
     </body>
 </html> 

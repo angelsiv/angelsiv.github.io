@@ -215,6 +215,7 @@
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
+
     <script>
         var slideIndex = 1;     // slides indexed from 1
         showSlides(slideIndex);
@@ -234,14 +235,18 @@
             var i;
             var slides = document.getElementsByClassName("mySlides");
             var dots = document.getElementsByClassName("dot");
+
             if (n > slides.length) { slideIndex = 1 }   // if beyond the last one, go to the first one
             if (n < 1) { slideIndex = slides.length }   // if before the first one, go to the last one
+
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
+
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
             }
+
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
         }

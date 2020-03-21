@@ -109,6 +109,7 @@ h2
 {
     margin: 30px;
     margin-bottom: 100px;
+    margin-top: 100px;
     text-align: center;
 }
 /*Redirectables bar*/
@@ -116,13 +117,18 @@ ul#redirectables li
 {
     margin: auto;
     /*padding-top: 50px;*/
-    padding: 30px;
+    padding: 50px;
     display: inline;
 }
 
 .redirectables img
 {
     width: 150px;
+}
+
+.r_desk
+{
+    display: none;
 }
 
 /*Skill display fade animation*/
@@ -293,6 +299,14 @@ h2#projects-title
         margin: 30px;
         margin-bottom: 50px;
         text-align: center;
+    }
+    .r_desk
+    {
+        display: inline;
+    }
+    .r_mob
+    {
+        display: none;
     }
     ul#redirectables li 
     {

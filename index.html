@@ -7,23 +7,6 @@
         <link rel="stylesheet" href="css/body_stylesheet.css" />
         <link rel="stylesheet" href="css/img_stylesheet.css" />
         <title> angelsiu </title>
-
-        <!--<script>
-            var coll = document.getElementsByClassName("rolecollapsible");
-            var i;
-
-            for (i = 0; i < coll.length; i++) {
-                coll[i].addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.display === "block") {
-                        content.style.display = "none";
-                    } else {
-                        content.style.display = "block";
-                    }
-                });
-            }
-        </script>-->
     </head>
 
     <body>
@@ -32,10 +15,18 @@
         <div class="heading">
             <ul id="horizontal-list">
                 <li> <a href="index.html"> <img src="img/home-button.png" alt="home" /> </a> </li>
-                <li> <a href="aboutme.html"> about me </a> </li>
-                <li> <a href="portfolio.html"> portfolio </a> </li>
-                <li> <a href="contact.html"> contact </a> </li>
+                <li> <a href="#"> about me </a> </li>
+                <li> <a href="#"> portfolio </a> </li>
+                <li> <a href="#"> contact </a> </li>
             </ul>
+        </div>
+
+        <div class="language-switch">
+            <input type="checkbox" class="checkbox" id="languageswitch"/>
+            <label class="label" for="languageswitch">
+                <span class="switch-first-label"></span>
+                <span class="switch-second-label"></span>
+            </label>
         </div>
 
         <!-- PROFILE PICTURE -->
@@ -133,6 +124,8 @@
                 setTimeout(automaticChange, 3000);
             }
         </script>
+
+
 
     </body>
 </html> 

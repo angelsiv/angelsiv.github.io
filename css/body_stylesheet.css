@@ -150,6 +150,7 @@ table td
     position: sticky;
     top: 0;
     text-align: center;
+    width: 100px;
 }
 
 .checkbox
@@ -172,7 +173,7 @@ table td
 .switch-first-label
 {
     display: block;
-    width: 100%;
+    width: 200%;
     margin-left: -100%;
     transition: margin 0.3s ease-in 0s;
 }
@@ -180,16 +181,42 @@ table td
 .switch-first-label:before, .switch-first-label:after
 {
     display: block;
+    width: 50%;
+    height: 100px;
+    float: left;
+    font-size: 20px;
+    padding: 0;
+    line-height: 30px;
+    box-sizing: border-box;
 }
 
 .switch-first-label:before
 {
     content: "FR";
+    padding-left: 10px;
+    background-color: darkslategrey;
+    color: white;
 }
 
 .switch-first-label:after
 {
     content: "EN";
+    padding-right: 10px;
+    background-color: darkslategrey;
+    text-align: right;
+    color: white;
+}
+
+.switch-second-label
+{
+    display: block;
+    width: 18px;
+    margin: 6px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 56px;
+    transition: all 0.3s ease-in 0s;
 }
 
 .checkbox:checked + .label .switch-first-label

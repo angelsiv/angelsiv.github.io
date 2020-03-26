@@ -265,7 +265,7 @@ ul#redirectables li
     -webkit-animation-duration: 2s;
 }
 
-/*PORTFOLIO PAGE*/
+/***PORTFOLIO PAGE***/
 h2#projects-title
 {
     margin-left: 0px;
@@ -273,23 +273,34 @@ h2#projects-title
     font-family: fantasque_sans_monoregular;
 }
 
-/*CONTACT PAGE*/
+/*****CONTACT PAGE*****/
 .contact-container
 {
-    margin-left: 600px;
-    margin-right: 600px;
-    background-color: lightseagreen;
+    margin: 100px;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 25px;
 }
 
 .contact-container p
 {
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 25px;
+    color: darkslategrey;
+    font-size: 30px;
     text-align: center;
-    border-radius: 10px;
+    display: inline;
 }
 
+.contact-container section
+{
+    color: white;
+    background-color: lightseagreen;
+    padding: 10px;
+}
+
+.contact-container table td
+{
+    padding: 50px;
+}
 
 /**************************DESKTOP DIMENSIONS****************************/
 

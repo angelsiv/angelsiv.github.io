@@ -18,7 +18,7 @@
             </ul>
         </div>
 
-        <div class="contact-container">
+        <!--<div class="contact-container">
             <p>
                 You can find me on
                 <a href="https://www.linkedin.com/in/angeline-siv/" target="_blank"> LinkedIn. </a>
@@ -26,25 +26,40 @@
             <p>
                 Or send a message to my email address: siv.angeline@ymail.com
             </p>
-        </div>
+        </div>-->
 
         <div class="contact-container">
             
-            <section class="name-input">
-                <label class="namelabel" for="nameinput">name</label>
-                <input type="text" id="nameinput" placeholder="angeline siv"/>
-            </section>
+            <table>
+                <tr>
+                    <td class="form">
+                        <section class="name-input">
+                            <label class="namelabel" for="nameinput">name</label>
+                            <input type="text" id="nameinput" placeholder="angeline siv" />
+                        </section>
+
+                        <section class="email-input">
+                            <label class="emaillabel" for="emailinput">email</label>
+                            <input type="email" id="emailinput" placeholder="siv.angeline@ymail.com" />
+                        </section>
+
+                        <section class="message-input">
+                            <label class="messagelabel" for="messageinput">message</label>
+                            <input type="text" id="messageinput" placeholder="any comments or questions?" />
+                        </section>
+                        <button type="submit">send message</button>
+                    </td>
+                    <td>
+                        <p>
+                            The best way to contact me is on <a href="https://www.linkedin.com/in/angeline-siv/" target="_blank"> LinkedIn</a>.
+                            That is also where you can find more details regarding my resume.
+                            If you would like to send me an email instead, simply fill in the form!
+                        </p>
+                    </td>
+                </tr>
+            </table>
+
             
-            <section class="email-input">
-                <label class="emaillabel" for="emailinput">email</label>
-                <input type="email" id="emailinput" placeholder="siv.angeline@ymail.com"/>
-            </section>
-           
-            <section class="message-input">
-                <label class="messagelabel" for="messageinput">message</label>
-                <input type="text" id="messageinput" placeholder="any comments or questions?" />
-            </section>
-            <button type="submit">send message</button>
         </div>
 
     </body>

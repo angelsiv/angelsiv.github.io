@@ -293,13 +293,29 @@ h2#projects-title
 .contact-container section
 {
     color: white;
+    padding: 10px;
+}
+
+form
+{
     background-color: lightseagreen;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .contact-container table td
 {
     padding: 25px;
+}
+
+label
+{
+    font-size: 20px;
+}
+
+input
+{
+    width: 400px;
 }
 
 .message-input textarea

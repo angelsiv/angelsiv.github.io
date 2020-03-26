@@ -299,7 +299,14 @@ h2#projects-title
 
 .contact-container table td
 {
-    padding: 50px;
+    padding: 25px;
+}
+
+.message-input textarea
+{
+    width: 400px;
+    height: 50px;
+    resize: none;
 }
 
 /**************************DESKTOP DIMENSIONS****************************/

@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/body_stylesheet.css" />
         <link rel="stylesheet" href="css/img_stylesheet.css" />
+        <script src="js/contactform.js"></script>
         <title> angelsiu/contact </title>
     </head>
 
@@ -24,7 +25,7 @@
                 <tr>
                     <!-- FORM -->
                     <td class="form">
-                        <form id="messageform">
+                        <form id="messageform" onsubmit="false">
                             <section class="name-input">
                                 <label class="namelabel" for="nameinput">name</label>
                                 <input type="text" id="nameinput" form="messageform" placeholder="angeline siv" />
@@ -40,7 +41,7 @@
                                 <textarea id="messageinput" form="messageform" placeholder="any comments or questions?"></textarea>
                             </section>
                             <section class="submit-button">
-                                <button type="submit">send message</button>
+                                <button onclick="sendMessage()">send message</button>
                             </section>
                         </form>
                     </td>

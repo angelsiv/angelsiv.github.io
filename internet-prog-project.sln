@@ -8,6 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		aboutme.html = aboutme.html
 		css\body_stylesheet.css = css\body_stylesheet.css
 		contact.html = contact.html
+		js\contactform.js = js\contactform.js
 		css\img_stylesheet.css = css\img_stylesheet.css
 		index.html = index.html
 		portfolio.html = portfolio.html

@@ -1,13 +1,5 @@
 @font-face 
 {
-    font-family: 'alphabetized_cassette_tapesRg';
-    src: url('fonts/alphabetized_cassette_tapes-webfont.woff2') format('woff2'), url('fonts/alphabetized_cassette_tapes-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face 
-{
     font-family: 'fantasque_sans_monoregular';
     src: url('fonts/fantasquesansmono-regular-webfont.woff2') format('woff2'), url('fonts/fantasquesansmono-regular-webfont.woff') format('woff');
     font-weight: normal;
@@ -161,7 +153,6 @@ table td
 .label
 {
     display: block;
-    display: block;
     overflow: hidden;
     cursor: pointer;
     border: 3px solid white;
@@ -187,7 +178,6 @@ table td
     font-size: 20px;
     padding: 0;
     line-height: 30px;
-    box-sizing: border-box;
 }
 
 .switch-first-label:before
@@ -263,12 +253,14 @@ ul#redirectables li
     animation-duration: 2s;
     -webkit-animation-name: fade;
     -webkit-animation-duration: 2s;
+    -moz-animation-name: fade;
+    -moz-animation-duration: 2s;
 }
 
 /***PORTFOLIO PAGE***/
 h2#projects-title
 {
-    margin-left: 0px;
+    margin-left: 0;
     font-size: 30px;
     font-family: fantasque_sans_monoregular;
 }
@@ -348,8 +340,8 @@ input
     {
         display: inline;
         border: none;
-        border-radius: 0px;
-        padding: 0px;
+        border-radius: 0;
+        padding: 0;
     }
 
     .heading

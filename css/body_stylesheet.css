@@ -21,10 +21,10 @@ html
     background-image: linear-gradient(to right, #85dcac, lightseagreen);
 }
 
-body 
+/*body 
 {
 
-}
+}*/
 
 /*The horizontal menu bar*/
 body :link, :visited
@@ -240,7 +240,7 @@ table td
 }
 ul#redirectables li
 {
-    margin: auto;
+    /*margin: auto;*/
     /*padding-top: 50px;*/
     padding: 50px;
     display: inline;
@@ -383,7 +383,6 @@ input
     }
     ul#redirectables li 
     {
-        margin: auto;
         /*padding-top: 50px;*/
         padding: 10px;
         display: inline;
